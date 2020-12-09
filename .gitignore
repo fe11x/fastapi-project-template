@@ -41,3 +41,5 @@ __pycache__/
 local.py
 /build/
 postgres-data
+*.egg-info/
+*.sqlite
