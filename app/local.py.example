@@ -1,0 +1,9 @@
+import os
+
+DATABASE = {
+    'provider': 'postgres',
+    'user': 'postgres',
+    'password': '',
+    'host': 'localhost',
+    'database': 'criclick'
+}
