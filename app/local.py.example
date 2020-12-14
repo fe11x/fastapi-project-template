@@ -1,9 +1,7 @@
 import os
 
 DATABASE = {
-    'provider': 'postgres',
-    'user': 'postgres',
-    'password': '',
-    'host': 'localhost',
-    'database': 'criclick'
+    'provider': 'sqlite',
+    'filename': os.environ.get('DB_FILE', 'database.sqlite'),
+    'create_db': True
 }

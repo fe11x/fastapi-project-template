@@ -6,9 +6,11 @@ import sys
 AUTO_CREATE_DB = os.environ.get('AUTO_CREATE_DB', True)
 
 DATABASE = {
-    'provider': 'sqlite',
-    'filename': os.environ.get('DB_FILE', 'database.sqlite'),
-    'create_db': True
+    'provider': 'postgres',
+    'user': os.environ.get('DB_USER', 'postgres'),
+    'password': os.environ.get('DB_PASS', ''),
+    'host': os.environ.get('DB_HOST', 'localhost'),
+    'database': os.environ.get('DB_NAME', 'test')
 }
 
 
